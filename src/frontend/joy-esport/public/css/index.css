@@ -1,0 +1,184 @@
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('../font/NotoSans.ttf') format('truetype');
+  /* 폰트 파일 경로 */
+}
+
+* {
+  font-family: "Noto Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  background: white;
+  /* background: linear-gradient(to bottom, #253A67 0%, #253A67 20%, #F2A63B 90%, #EEBF41 100%); */
+  background-repeat: no-repeat;
+  /* 그라데이션 반복을 방지 */
+  background-attachment: fixed;
+  /* 스크롤 시에도 배경 고정 */
+  background-size: cover;
+  /* 화면 전체를 덮도록 설정 */
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  height: 55px;
+  padding: 8px;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* 세로 중앙 정렬 */
+  border-bottom: 2px solid #ccc;
+  background-color: #1290FF;
+}
+
+.header img {
+  width: 20px;
+  cursor: pointer;
+}
+
+#user-name {
+  font-size: 15px;
+  color: white;
+}
+
+.title {
+  font-size: 20px;
+  color: white;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.button {
+  width: 90%;
+  height: 25vh;
+  max-width: 450px;
+  /* 전체 화면 너비의 90%를 차지하도록 설정 */
+
+  border: 1px solid #ccc;
+  padding: 0;
+  /* 패딩을 화면 너비에 비례하게 설정 */
+  /* 버튼 간 간격을 줄임 */
+  border-radius: 11px;
+  /* 버튼 모서리를 둥글게 설정 */
+  box-sizing: border-box;
+  /* padding과 border를 포함한 크기 계산 */
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+.button-image {
+  height: 75%;
+  width: 100%;
+
+  object-fit: fill;
+}
+
+.score-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 25%;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: -5px;
+}
+
+.score-box {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.score-label {
+  font-size: 4.2vw;
+  font-weight: bold;
+  text-align: center;
+}
+
+.score-value {
+  font-size: 4.2vw;
+  text-align: center;
+}
+
+.ranking_img {
+  width: 4.2vw;
+  height: 4.2vw;
+  filter: brightness(0) saturate(100%) invert(0) sepia(100%) saturate(500%) hue-rotate(190deg);
+  cursor: pointer;
+}
+
+@media (min-width: 500px) {
+  .score-label {
+    font-size: 21px;
+  }
+
+  .score-value {
+    font-size: 21px;
+  }
+
+  .ranking_img {
+    width: 21px;
+    height: 21px;
+  }
+}
+
+@media (min-aspect-ratio : 7/5) {
+  .content {
+    flex-direction: row;
+  }
+
+  .button {
+    width: 30vw;
+    height: auto;
+    aspect-ratio: 1/1;
+  }
+
+  @media (max-width: 1450px) {
+    .score-box {
+      width: 50%;
+    }
+
+    .score-label {
+      font-size: 2vw;
+    }
+
+    .score-value {
+      font-size: 2vw;
+    }
+
+    .ranking_img {
+      width: 2vw;
+      height: 2vw;
+    }
+  }
+}

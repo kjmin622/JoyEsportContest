@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>JOY E-sport</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/loading.css">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <span id="user-name"></span>
+            <span class="title">JOY E-sports</span>
+            <img id="logout" src="images/profile_icon.png">
+        </div>
+        <div class="content">
+            <div class="button">
+                <img src="images/guitar_game_title.png" alt="이미지1" class="button-image">
+                <div class="score-container">
+                    <span class="score-box">
+                        <span class="score-label">최고점수</span>
+                        <span id="guitar_score" class="score-value"></span>
+                    </span>
+                    <img class="ranking_img" src="images/ranking_icon.png" alt="ranking">
+                </div>
+            </div>
+            <div class="button">
+                <img src="images/racing_game_title.png" alt="이미지2" class="button-image">
+                <div class="score-container">
+                    <span class="score-box">
+                        <span class="score-label">최고점수</span>
+                        <span id="racing_score" class="score-value"></span>
+                    </span>
+                    <img class="ranking_img" src="images/ranking_icon.png" alt="ranking" id="racing_ranking_btn">
+                </div>
+            </div>
+            <div class="button">
+                <img src="images/safe_game_title.png" alt="이미지3" class="button-image">
+                <div class="score-container">
+                    <span class="score-box">
+                        <span class="score-label">티켓개수</span>
+                        <span id="ticket_count" class="score-value"></span>
+                    </span>
+                    <span id="ticket_score" class="score-value"></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="loading_screen">
+        <img id="loading_screen_img" src="images/joy_logo_white.png" class="loading_image">
+    </div>
+</body>
+<script src="js/url.js"></script>
+<script src="js/index.js"></script>
+
+</html>

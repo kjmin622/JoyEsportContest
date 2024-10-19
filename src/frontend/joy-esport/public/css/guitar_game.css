@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'MapleBold';
+  src: url('../font/MapleBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'MapleLight';
+  src: url('../font/MapleLight.ttf') format('truetype');
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+#game-container {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 3 / 5;
+  /* 3:5 비율 유지 */
+  max-height: 100vh;
+  background: linear-gradient(to bottom, #87CEEB, #B0E0E6);
+  /* 배경 그라데이션 */
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+}
