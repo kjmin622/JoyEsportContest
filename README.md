@@ -48,14 +48,14 @@
 <br/>
 
 ## 3.3 Backend
-|  |  |
+|  |
 |-----------------|
 | SpringBoot(Gradle)   
 
 <br/>
 
 ## 3.4 DataBase
-|  |  |
+|  |
 |-----------------|
 | PostgreSQL 
 
